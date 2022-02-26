@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: "http://localhost:8080/api/v1/"
+  url: "http://132.145.214.230:8080/runt/api/v1/"
 };
 
 /*
