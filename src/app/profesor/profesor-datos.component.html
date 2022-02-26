@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-sm-12 d-flex justify-content-center">
+            <span style="font-size:25px; font-weight:bold" class="text-center">{{titulo}}</span>
+        </div>        
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Asignaturas</th>
+                <th scope="col">Estudiantes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let itemMaterias of profesor.asignaturas;let indice=index">
+                <td>{{indice+1}}</td>
+                <td>{{itemMaterias.nombre}}</td>
+                <td *ngFor="let itemEstudiantes of itemMaterias.estudiantes;" >{{itemEstudiantes.nombre}} </td>        
+            </tr> 
+            </tbody>
+        </table>
+    </div>
+    
+</div>
